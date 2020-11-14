@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
@@ -46,6 +46,13 @@ Partial Class Form1
         Me.Score_Text = New System.Windows.Forms.Label()
         Me.Replay_Button = New System.Windows.Forms.Button()
         Me.Speed_Text = New System.Windows.Forms.Label()
+        Me.PageSetupDialog1 = New System.Windows.Forms.PageSetupDialog()
+        Me.PageSetupDialog2 = New System.Windows.Forms.PageSetupDialog()
+        Me.Scor_text = New System.Windows.Forms.Label()
+        Me.Viteza_text = New System.Windows.Forms.Label()
+        Me.Record_Text = New System.Windows.Forms.Label()
+        Me.Restart_Button = New System.Windows.Forms.Button()
+        Me.nameLabel = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -141,9 +148,9 @@ Partial Class Form1
         '
         Me.Car.BackColor = System.Drawing.Color.Transparent
         Me.Car.Image = CType(resources.GetObject("Car.Image"), System.Drawing.Image)
-        Me.Car.Location = New System.Drawing.Point(113, 360)
+        Me.Car.Location = New System.Drawing.Point(113, 359)
         Me.Car.Name = "Car"
-        Me.Car.Size = New System.Drawing.Size(50, 81)
+        Me.Car.Size = New System.Drawing.Size(50, 82)
         Me.Car.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Car.TabIndex = 8
         Me.Car.TabStop = False
@@ -227,6 +234,7 @@ Partial Class Form1
         Me.Score_Text.Size = New System.Drawing.Size(74, 19)
         Me.Score_Text.TabIndex = 13
         Me.Score_Text.Text = "Score 0"
+        Me.Score_Text.Visible = False
         '
         'Replay_Button
         '
@@ -251,6 +259,65 @@ Partial Class Form1
         Me.Speed_Text.Size = New System.Drawing.Size(77, 19)
         Me.Speed_Text.TabIndex = 15
         Me.Speed_Text.Text = "Speed 0"
+        Me.Speed_Text.Visible = False
+        '
+        'PageSetupDialog2
+        '
+        Me.PageSetupDialog2.ShowHelp = True
+        '
+        'Scor_text
+        '
+        Me.Scor_text.AutoSize = True
+        Me.Scor_text.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Scor_text.ForeColor = System.Drawing.Color.White
+        Me.Scor_text.Location = New System.Drawing.Point(7, 9)
+        Me.Scor_text.Name = "Scor_text"
+        Me.Scor_text.Size = New System.Drawing.Size(64, 19)
+        Me.Scor_text.TabIndex = 16
+        Me.Scor_text.Text = "Scor 0"
+        Me.Scor_text.Visible = False
+        '
+        'Viteza_text
+        '
+        Me.Viteza_text.AutoSize = True
+        Me.Viteza_text.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Viteza_text.ForeColor = System.Drawing.Color.White
+        Me.Viteza_text.Location = New System.Drawing.Point(196, 11)
+        Me.Viteza_text.Name = "Viteza_text"
+        Me.Viteza_text.Size = New System.Drawing.Size(78, 19)
+        Me.Viteza_text.TabIndex = 17
+        Me.Viteza_text.Text = "Viteza 0"
+        Me.Viteza_text.Visible = False
+        '
+        'Record_Text
+        '
+        Me.Record_Text.AutoSize = True
+        Me.Record_Text.Location = New System.Drawing.Point(-2, 38)
+        Me.Record_Text.Name = "Record_Text"
+        Me.Record_Text.Size = New System.Drawing.Size(62, 17)
+        Me.Record_Text.TabIndex = 18
+        Me.Record_Text.Text = "Record: "
+        '
+        'Restart_Button
+        '
+        Me.Restart_Button.BackColor = System.Drawing.Color.Tomato
+        Me.Restart_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Restart_Button.ForeColor = System.Drawing.Color.Snow
+        Me.Restart_Button.Location = New System.Drawing.Point(98, 222)
+        Me.Restart_Button.Name = "Restart_Button"
+        Me.Restart_Button.Size = New System.Drawing.Size(102, 31)
+        Me.Restart_Button.TabIndex = 19
+        Me.Restart_Button.Text = "Reluare"
+        Me.Restart_Button.UseVisualStyleBackColor = False
+        Me.Restart_Button.Visible = False
+        '
+        'nameLabel
+        '
+        Me.nameLabel.AutoSize = True
+        Me.nameLabel.Location = New System.Drawing.Point(6, 55)
+        Me.nameLabel.Name = "nameLabel"
+        Me.nameLabel.Size = New System.Drawing.Size(0, 17)
+        Me.nameLabel.TabIndex = 20
         '
         'Form1
         '
@@ -258,6 +325,11 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkGray
         Me.ClientSize = New System.Drawing.Size(282, 453)
+        Me.Controls.Add(Me.nameLabel)
+        Me.Controls.Add(Me.Restart_Button)
+        Me.Controls.Add(Me.Record_Text)
+        Me.Controls.Add(Me.Viteza_text)
+        Me.Controls.Add(Me.Scor_text)
         Me.Controls.Add(Me.Speed_Text)
         Me.Controls.Add(Me.Replay_Button)
         Me.Controls.Add(Me.Score_Text)
@@ -274,10 +346,11 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximumSize = New System.Drawing.Size(300, 500)
         Me.MinimumSize = New System.Drawing.Size(300, 500)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Play"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -317,4 +390,11 @@ Partial Class Form1
     Friend WithEvents Score_Text As Label
     Friend WithEvents Replay_Button As Button
     Friend WithEvents Speed_Text As Label
+    Friend WithEvents PageSetupDialog1 As PageSetupDialog
+    Friend WithEvents PageSetupDialog2 As PageSetupDialog
+    Friend WithEvents Scor_text As Label
+    Friend WithEvents Viteza_text As Label
+    Friend WithEvents Record_Text As Label
+    Friend WithEvents Restart_Button As Button
+    Friend WithEvents nameLabel As Label
 End Class
