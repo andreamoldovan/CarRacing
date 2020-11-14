@@ -13,8 +13,11 @@
     End Sub
 
 
-    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+    Private Sub PictureEng_Click(sender As Object, e As EventArgs) Handles PictureEng.Click
         help.Show()
+    End Sub
 
+    Private Sub PictureRom_Click(sender As Object, e As EventArgs) Handles PictureRom.Click
+        ajutor.Show()
     End Sub
 End Class

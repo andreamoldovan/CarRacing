@@ -77,6 +77,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ajutor.Designer.vb">
+      <DependentUpon>ajutor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ajutor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -114,8 +120,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ajutor.resx">
+      <DependentUpon>ajutor.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help.bin.resx">
+      <DependentUpon>help.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="help.resx">
       <DependentUpon>help.vb</DependentUpon>
