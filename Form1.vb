@@ -8,6 +8,8 @@ Public Class Form1
     Dim playerName As String = ""
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim FileNum As Integer
+
         speed = 3
         road(0) = PictureBox1
         road(1) = PictureBox2
@@ -18,6 +20,13 @@ Public Class Form1
         road(6) = PictureBox7
         road(7) = PictureBox8
 
+        FileNum = FreeFile()
+        FileOpen(FileNum, "score.txt", OpenMode.Input)
+        playerName = LineInput(FileNum)
+        record = LineInput(FileNum)
+        nameLabel.Text = "Top player: " & playerName
+        Record_Text.Text = "Record: " & record
+        FileClose(FileNum)
 
 
     End Sub
@@ -43,6 +52,7 @@ Public Class Form1
         End If
         Speed_Text.Text = "Speed" & speed
         Viteza_text.Text = "Viteza" & speed
+        Velocidad_Text.Text = "Velocidad" & speed
         If (Car.Bounds.IntersectsWith(EnemyCar1.Bounds)) Then
             gameOver()
         End If
@@ -68,13 +78,16 @@ Public Class Form1
             FileClose(FileNum)
 
         End If
+
+
         End_Text.Visible = True
         Replay_Button.Visible = True
+        Restart_Button.Visible = True
+        Reiniciar_Button.Visible = True
         RoadMover.Stop()
-        Enemy1_Mover.Stop()
-        Enemy2_Mover.Stop()
-        Enemy3_Mover.Stop()
-
+            Enemy1_Mover.Stop()
+            Enemy2_Mover.Stop()
+            Enemy3_Mover.Stop()
     End Sub
 
     Private Sub Timer1_Tick_1(sender As Object, e As EventArgs) Handles Right_Mover.Tick
@@ -118,6 +131,7 @@ Public Class Form1
             score += 1
             Score_Text.Text = "Score" & score
             Scor_text.Text = "Scor" & score
+            Puntuacion_Text.Text = "Punctuacion" & score
 
             EnemyCar1.Top = -(CInt(Math.Ceiling(Rnd() * 150)) + EnemyCar1.Height)
             EnemyCar1.Left = CInt(Math.Ceiling(Rnd() * 50)) + 0
@@ -130,6 +144,7 @@ Public Class Form1
             score += 1
             Score_Text.Text = "Score" & score
             Scor_text.Text = "Scor" & score
+            Puntuacion_Text.Text = "Punctuacion" & score
 
             EnemyCar2.Top = -(CInt(Math.Ceiling(Rnd() * 150)) + EnemyCar2.Height)
             EnemyCar2.Left = CInt(Math.Ceiling(Rnd() * 50)) + 100
@@ -142,6 +157,7 @@ Public Class Form1
             score += 1
             Score_Text.Text = "Score" & score
             Scor_text.Text = "Scor" & score
+            Puntuacion_Text.Text = "Punctuacion" & score
             EnemyCar3.Top = -(CInt(Math.Ceiling(Rnd() * 150)) + EnemyCar3.Height)
             EnemyCar3.Left = CInt(Math.Ceiling(Rnd() * 20)) + 130
         End If
@@ -167,6 +183,18 @@ Public Class Form1
         Form1_Load(e, e)
         Scor_text.Visible = True
         Viteza_text.Visible = True
+        Record_Text.Visible = True
+        Record_Text.Text = "Record: " & record
+        nameLabel.Text = "Top player: " & playerName
+    End Sub
+
+    Private Sub Reiniciar_Button_Click(sender As Object, e As EventArgs) Handles Reiniciar_Button.Click
+        score = 0
+        Me.Controls.Clear()
+        InitializeComponent()
+        Form1_Load(e, e)
+        Puntuacion_Text.Visible = True
+        Velocidad_Text.Visible = True
         Record_Text.Visible = True
         Record_Text.Text = "Record: " & record
         nameLabel.Text = "Top player: " & playerName

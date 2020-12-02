@@ -53,6 +53,9 @@ Partial Class Form1
         Me.Record_Text = New System.Windows.Forms.Label()
         Me.Restart_Button = New System.Windows.Forms.Button()
         Me.nameLabel = New System.Windows.Forms.Label()
+        Me.Velocidad_Text = New System.Windows.Forms.Label()
+        Me.Puntuacion_Text = New System.Windows.Forms.Label()
+        Me.Reiniciar_Button = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -239,12 +242,14 @@ Partial Class Form1
         'Replay_Button
         '
         Me.Replay_Button.BackColor = System.Drawing.Color.Tomato
-        Me.Replay_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Replay_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Replay_Button.ForeColor = System.Drawing.Color.Snow
-        Me.Replay_Button.Location = New System.Drawing.Point(98, 222)
+        Me.Replay_Button.Image = CType(resources.GetObject("Replay_Button.Image"), System.Drawing.Image)
+        Me.Replay_Button.Location = New System.Drawing.Point(199, 198)
         Me.Replay_Button.Name = "Replay_Button"
-        Me.Replay_Button.Size = New System.Drawing.Size(90, 31)
+        Me.Replay_Button.Size = New System.Drawing.Size(86, 42)
         Me.Replay_Button.TabIndex = 14
+        Me.Replay_Button.TabStop = False
         Me.Replay_Button.Text = "Replay"
         Me.Replay_Button.UseVisualStyleBackColor = False
         Me.Replay_Button.Visible = False
@@ -292,6 +297,7 @@ Partial Class Form1
         'Record_Text
         '
         Me.Record_Text.AutoSize = True
+        Me.Record_Text.BackColor = System.Drawing.Color.Transparent
         Me.Record_Text.Location = New System.Drawing.Point(-2, 38)
         Me.Record_Text.Name = "Record_Text"
         Me.Record_Text.Size = New System.Drawing.Size(62, 17)
@@ -300,13 +306,15 @@ Partial Class Form1
         '
         'Restart_Button
         '
-        Me.Restart_Button.BackColor = System.Drawing.Color.Tomato
-        Me.Restart_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Restart_Button.ForeColor = System.Drawing.Color.Snow
-        Me.Restart_Button.Location = New System.Drawing.Point(98, 222)
+        Me.Restart_Button.BackColor = System.Drawing.Color.White
+        Me.Restart_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Restart_Button.ForeColor = System.Drawing.Color.White
+        Me.Restart_Button.Image = CType(resources.GetObject("Restart_Button.Image"), System.Drawing.Image)
+        Me.Restart_Button.Location = New System.Drawing.Point(-7, 198)
         Me.Restart_Button.Name = "Restart_Button"
-        Me.Restart_Button.Size = New System.Drawing.Size(102, 31)
+        Me.Restart_Button.Size = New System.Drawing.Size(95, 42)
         Me.Restart_Button.TabIndex = 19
+        Me.Restart_Button.TabStop = False
         Me.Restart_Button.Text = "Reluare"
         Me.Restart_Button.UseVisualStyleBackColor = False
         Me.Restart_Button.Visible = False
@@ -314,10 +322,50 @@ Partial Class Form1
         'nameLabel
         '
         Me.nameLabel.AutoSize = True
+        Me.nameLabel.BackColor = System.Drawing.Color.Transparent
         Me.nameLabel.Location = New System.Drawing.Point(6, 55)
         Me.nameLabel.Name = "nameLabel"
         Me.nameLabel.Size = New System.Drawing.Size(0, 17)
         Me.nameLabel.TabIndex = 20
+        '
+        'Velocidad_Text
+        '
+        Me.Velocidad_Text.AutoSize = True
+        Me.Velocidad_Text.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Velocidad_Text.ForeColor = System.Drawing.Color.White
+        Me.Velocidad_Text.Location = New System.Drawing.Point(166, 11)
+        Me.Velocidad_Text.Name = "Velocidad_Text"
+        Me.Velocidad_Text.Size = New System.Drawing.Size(105, 19)
+        Me.Velocidad_Text.TabIndex = 21
+        Me.Velocidad_Text.Text = "Velocidad 0"
+        Me.Velocidad_Text.Visible = False
+        '
+        'Puntuacion_Text
+        '
+        Me.Puntuacion_Text.AutoSize = True
+        Me.Puntuacion_Text.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Puntuacion_Text.ForeColor = System.Drawing.Color.White
+        Me.Puntuacion_Text.Location = New System.Drawing.Point(-3, 9)
+        Me.Puntuacion_Text.Name = "Puntuacion_Text"
+        Me.Puntuacion_Text.Size = New System.Drawing.Size(117, 19)
+        Me.Puntuacion_Text.TabIndex = 22
+        Me.Puntuacion_Text.Text = "Puntuación 0"
+        Me.Puntuacion_Text.Visible = False
+        '
+        'Reiniciar_Button
+        '
+        Me.Reiniciar_Button.BackColor = System.Drawing.Color.Firebrick
+        Me.Reiniciar_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Reiniciar_Button.ForeColor = System.Drawing.Color.Snow
+        Me.Reiniciar_Button.Image = CType(resources.GetObject("Reiniciar_Button.Image"), System.Drawing.Image)
+        Me.Reiniciar_Button.Location = New System.Drawing.Point(94, 198)
+        Me.Reiniciar_Button.Name = "Reiniciar_Button"
+        Me.Reiniciar_Button.Size = New System.Drawing.Size(99, 42)
+        Me.Reiniciar_Button.TabIndex = 23
+        Me.Reiniciar_Button.TabStop = False
+        Me.Reiniciar_Button.Text = "Reiniciar"
+        Me.Reiniciar_Button.UseVisualStyleBackColor = False
+        Me.Reiniciar_Button.Visible = False
         '
         'Form1
         '
@@ -325,6 +373,9 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkGray
         Me.ClientSize = New System.Drawing.Size(282, 453)
+        Me.Controls.Add(Me.Reiniciar_Button)
+        Me.Controls.Add(Me.Puntuacion_Text)
+        Me.Controls.Add(Me.Velocidad_Text)
         Me.Controls.Add(Me.nameLabel)
         Me.Controls.Add(Me.Restart_Button)
         Me.Controls.Add(Me.Record_Text)
@@ -350,6 +401,7 @@ Partial Class Form1
         Me.MaximumSize = New System.Drawing.Size(300, 500)
         Me.MinimumSize = New System.Drawing.Size(300, 500)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Play"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -397,4 +449,7 @@ Partial Class Form1
     Friend WithEvents Record_Text As Label
     Friend WithEvents Restart_Button As Button
     Friend WithEvents nameLabel As Label
+    Friend WithEvents Velocidad_Text As Label
+    Friend WithEvents Puntuacion_Text As Label
+    Friend WithEvents Reiniciar_Button As Button
 End Class

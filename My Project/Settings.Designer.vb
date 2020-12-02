@@ -53,6 +53,17 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DB2\Score.mdf;Integrated S"& _ 
+            "ecurity=True;Connect Timeout=30")>  _
+        Public ReadOnly Property ScoreConnectionString() As String
+            Get
+                Return CType(Me("ScoreConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

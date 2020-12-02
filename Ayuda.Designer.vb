@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ajutor
+Partial Class Ayuda
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class ajutor
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ajutor))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Ayuda))
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
@@ -41,7 +41,9 @@ Partial Class ajutor
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(96, 238)
+        Me.PictureBox4.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.PictureBox4.Location = New System.Drawing.Point(93, 268)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(68, 61)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -52,15 +54,16 @@ Partial Class ajutor
         '
         Me.TextBox2.BackColor = System.Drawing.Color.White
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(-4, 201)
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!)
+        Me.TextBox2.Location = New System.Drawing.Point(-42, 207)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(269, 47)
+        Me.TextBox2.Size = New System.Drawing.Size(348, 66)
         Me.TextBox2.TabIndex = 12
         Me.TextBox2.TabStop = False
-        Me.TextBox2.Text = "Ai grijă! La fiecare 10 mașini inamice" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "depășite, îți va crește viteza"
+        Me.TextBox2.Text = "¡Ten cuidado! Por cada 10 coches" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " enemigos obsoletos," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " tu velocidad aumentará."
         Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'PictureBox3
@@ -68,7 +71,9 @@ Partial Class ajutor
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(85, 148)
+        Me.PictureBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.PictureBox3.Location = New System.Drawing.Point(93, 154)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(88, 47)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -79,37 +84,43 @@ Partial Class ajutor
         '
         Me.TextBox1.BackColor = System.Drawing.Color.White
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(-4, 124)
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!)
+        Me.TextBox1.Location = New System.Drawing.Point(-42, 108)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(269, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(348, 44)
         Me.TextBox1.TabIndex = 10
         Me.TextBox1.TabStop = False
-        Me.TextBox1.Text = "Evită mașinile de pe contrasens" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.TextBox1.Text = "Evite los autos que vienen de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " la dirección opuesta"
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'helpmenu
         '
         Me.helpmenu.BackColor = System.Drawing.Color.White
         Me.helpmenu.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.helpmenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.helpmenu.Location = New System.Drawing.Point(1, 11)
+        Me.helpmenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!)
+        Me.helpmenu.Location = New System.Drawing.Point(-42, -1)
+        Me.helpmenu.Margin = New System.Windows.Forms.Padding(4)
+        Me.helpmenu.MinimumSize = New System.Drawing.Size(237, 20)
+        Me.helpmenu.Multiline = True
         Me.helpmenu.Name = "helpmenu"
         Me.helpmenu.ReadOnly = True
-        Me.helpmenu.Size = New System.Drawing.Size(264, 20)
+        Me.helpmenu.Size = New System.Drawing.Size(348, 32)
         Me.helpmenu.TabIndex = 9
         Me.helpmenu.TabStop = False
-        Me.helpmenu.Text = "Folosește săgețile pentru a te deplasa"
+        Me.helpmenu.Text = "Usa las flechas para moverte"
         Me.helpmenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(144, 37)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.PictureBox2.Location = New System.Drawing.Point(149, 29)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(66, 69)
+        Me.PictureBox2.Size = New System.Drawing.Size(66, 70)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 8
         Me.PictureBox2.TabStop = False
@@ -117,20 +128,21 @@ Partial Class ajutor
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(52, 37)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.PictureBox1.Location = New System.Drawing.Point(49, 29)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(65, 69)
+        Me.PictureBox1.Size = New System.Drawing.Size(66, 70)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 7
         Me.PictureBox1.TabStop = False
         '
-        'ajutor
+        'Ayuda
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(262, 310)
+        Me.ClientSize = New System.Drawing.Size(269, 339)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.PictureBox3)
@@ -140,11 +152,10 @@ Partial Class ajutor
         Me.Controls.Add(Me.PictureBox1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MaximumSize = New System.Drawing.Size(280, 357)
-        Me.MinimumSize = New System.Drawing.Size(280, 357)
-        Me.Name = "ajutor"
+        Me.MaximumSize = New System.Drawing.Size(350, 415)
+        Me.Name = "Ayuda"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Ajutor"
+        Me.Text = "Auxilio"
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
