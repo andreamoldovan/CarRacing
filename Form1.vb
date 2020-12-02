@@ -21,7 +21,7 @@ Public Class Form1
         road(7) = PictureBox8
 
         FileNum = FreeFile()
-        FileOpen(FileNum, "score.txt", OpenMode.Input)
+        FileOpen(FileNum, "scor.txt", OpenMode.Input)
         playerName = LineInput(FileNum)
         record = LineInput(FileNum)
         nameLabel.Text = "Top player: " & playerName
@@ -72,7 +72,7 @@ Public Class Form1
             nameLabel.Text = "Top player: " & playerName
             FileNum = FreeFile()
 
-            FileOpen(FileNum, "score.txt", OpenMode.Output)
+            FileOpen(FileNum, "scor.txt", OpenMode.Output)
             PrintLine(FileNum, playerName)
             PrintLine(FileNum, record)
             FileClose(FileNum)
