@@ -40,4 +40,34 @@
             MsgBox("File Does Not Exist", MsgBoxStyle.Critical)
         End If
     End Sub
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+        Dim FILE_NAME As String = "C:\Users\User\source\repos\CarRacing\bin\Debug\TestCase.pdf"
+
+        If System.IO.File.Exists(FILE_NAME) = True Then
+            Process.Start(FILE_NAME)
+        Else
+            MsgBox("File Does Not Exist", MsgBoxStyle.Critical)
+        End If
+    End Sub
+
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+        Dim FILE_NAME As String = "C:\Users\User\source\repos\CarRacing\bin\Debug\Requirements.pdf"
+
+        If System.IO.File.Exists(FILE_NAME) = True Then
+            Process.Start(FILE_NAME)
+        Else
+            MsgBox("File Does Not Exist", MsgBoxStyle.Critical)
+        End If
+    End Sub
+
+    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+        Dim FILE_NAME As String = "C:\Users\User\source\repos\CarRacing\bin\Debug\ErrorBug.xlsx"
+
+        If System.IO.File.Exists(FILE_NAME) = True Then
+            Process.Start(FILE_NAME)
+        Else
+            MsgBox("File Does Not Exist", MsgBoxStyle.Critical)
+        End If
+    End Sub
 End Class
