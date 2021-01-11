@@ -21,7 +21,7 @@ Public Class Form1
         road(7) = PictureBox8
 
         FileNum = FreeFile()                            'returneaza nr  disponibil   
-        FileOpen(FileNum, "scor.txt", OpenMode.Input)   'deschidere fisier; asignare cale fisier si modul in care se deschide (read only)=input
+        FileOpen(FileNum, "score.txt", OpenMode.Input)   'deschidere fisier; asignare cale fisier si modul in care se deschide (read only)=input
         playerName = LineInput(FileNum)                 'citeste numelem jucatorului introdus pe prima linie a fisierului txt
         record = LineInput(FileNum)                     'citeste recordul utilizatorului
         nameLabel.Text = "Top player: " & playerName    'afiseaza in label textul indicat + valoarea preluata din fisierul extern
@@ -72,7 +72,7 @@ Public Class Form1
             nameLabel.Text = "Top player: " & playerName      'eticheta cu Top Player este reactualizata cu noua valoare preluata din fisier (playerName)   
             FileNum = FreeFile()
 
-            FileOpen(FileNum, "scor.txt", OpenMode.Output)  'deschide fisier indicat in mod Output sterge datele existente si insereaza datele noi
+            FileOpen(FileNum, "score.txt", OpenMode.Output)  'deschide fisier indicat in mod Output sterge datele existente si insereaza datele noi
             PrintLine(FileNum, playerName)                  'citeste inputul
             PrintLine(FileNum, record)
             FileClose(FileNum)                              'inchide fisierul
