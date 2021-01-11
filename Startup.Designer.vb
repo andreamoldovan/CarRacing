@@ -23,20 +23,21 @@ Partial Class Startup
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Startup))
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Incepe = New System.Windows.Forms.Button()
+        Me.Start = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureEng = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureRom = New System.Windows.Forms.PictureBox()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Incipio = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureEsp = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.gantt = New System.Windows.Forms.PictureBox()
+        Me.team = New System.Windows.Forms.PictureBox()
+        Me.requirements = New System.Windows.Forms.PictureBox()
+        Me.bugrep = New System.Windows.Forms.PictureBox()
+        Me.testcase = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureEng, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -44,38 +45,40 @@ Partial Class Startup
         CType(Me.PictureRom, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureEsp, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gantt, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.team, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.requirements, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.bugrep, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.testcase, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'Incepe
         '
-        Me.Button1.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(157, 351)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(96, 33)
-        Me.Button1.TabIndex = 0
-        Me.Button1.TabStop = False
-        Me.Button1.Text = "Începe"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Incepe.BackColor = System.Drawing.Color.Gainsboro
+        Me.Incepe.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Incepe.Location = New System.Drawing.Point(157, 351)
+        Me.Incepe.Name = "Incepe"
+        Me.Incepe.Size = New System.Drawing.Size(96, 33)
+        Me.Incepe.TabIndex = 0
+        Me.Incepe.TabStop = False
+        Me.Incepe.Text = "Începe"
+        Me.Incepe.UseVisualStyleBackColor = False
         '
-        'Button2
+        'Start
         '
-        Me.Button2.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(365, 351)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(97, 33)
-        Me.Button2.TabIndex = 1
-        Me.Button2.TabStop = False
-        Me.Button2.Text = "Start"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.Start.BackColor = System.Drawing.Color.Gainsboro
+        Me.Start.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Start.Location = New System.Drawing.Point(365, 351)
+        Me.Start.Name = "Start"
+        Me.Start.Size = New System.Drawing.Size(97, 33)
+        Me.Start.TabIndex = 1
+        Me.Start.TabStop = False
+        Me.Start.Text = "Start"
+        Me.Start.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.GhostWhite
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(173, 390)
         Me.PictureBox1.Name = "PictureBox1"
@@ -116,6 +119,7 @@ Partial Class Startup
         '
         'PictureRom
         '
+        Me.PictureRom.BackColor = System.Drawing.Color.Black
         Me.PictureRom.Image = CType(resources.GetObject("PictureRom.Image"), System.Drawing.Image)
         Me.PictureRom.Location = New System.Drawing.Point(181, 434)
         Me.PictureRom.Name = "PictureRom"
@@ -124,17 +128,17 @@ Partial Class Startup
         Me.PictureRom.TabIndex = 6
         Me.PictureRom.TabStop = False
         '
-        'Button4
+        'Incipio
         '
-        Me.Button4.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(259, 351)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(96, 33)
-        Me.Button4.TabIndex = 8
-        Me.Button4.TabStop = False
-        Me.Button4.Text = "Incipio"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.Incipio.BackColor = System.Drawing.Color.Gainsboro
+        Me.Incipio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Incipio.Location = New System.Drawing.Point(259, 351)
+        Me.Incipio.Name = "Incipio"
+        Me.Incipio.Size = New System.Drawing.Size(96, 33)
+        Me.Incipio.TabIndex = 8
+        Me.Incipio.TabStop = False
+        Me.Incipio.Text = "Incipio"
+        Me.Incipio.UseVisualStyleBackColor = False
         '
         'PictureBox3
         '
@@ -156,45 +160,55 @@ Partial Class Startup
         Me.PictureEsp.TabIndex = 10
         Me.PictureEsp.TabStop = False
         '
-        'PictureBox5
+        'gantt
         '
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(493, 37)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(94, 84)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 11
-        Me.PictureBox5.TabStop = False
+        Me.gantt.Image = CType(resources.GetObject("gantt.Image"), System.Drawing.Image)
+        Me.gantt.Location = New System.Drawing.Point(493, 37)
+        Me.gantt.Name = "gantt"
+        Me.gantt.Size = New System.Drawing.Size(94, 84)
+        Me.gantt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.gantt.TabIndex = 11
+        Me.gantt.TabStop = False
         '
-        'PictureBox6
+        'team
         '
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(493, 164)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(94, 84)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 12
-        Me.PictureBox6.TabStop = False
+        Me.team.Image = CType(resources.GetObject("team.Image"), System.Drawing.Image)
+        Me.team.Location = New System.Drawing.Point(493, 164)
+        Me.team.Name = "team"
+        Me.team.Size = New System.Drawing.Size(94, 84)
+        Me.team.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.team.TabIndex = 12
+        Me.team.TabStop = False
         '
-        'PictureBox7
+        'requirements
         '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(24, 37)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(110, 93)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 13
-        Me.PictureBox7.TabStop = False
+        Me.requirements.Image = CType(resources.GetObject("requirements.Image"), System.Drawing.Image)
+        Me.requirements.Location = New System.Drawing.Point(24, 37)
+        Me.requirements.Name = "requirements"
+        Me.requirements.Size = New System.Drawing.Size(110, 93)
+        Me.requirements.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.requirements.TabIndex = 13
+        Me.requirements.TabStop = False
         '
-        'PictureBox8
+        'bugrep
         '
-        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(12, 155)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(127, 114)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox8.TabIndex = 14
-        Me.PictureBox8.TabStop = False
+        Me.bugrep.Image = CType(resources.GetObject("bugrep.Image"), System.Drawing.Image)
+        Me.bugrep.Location = New System.Drawing.Point(12, 155)
+        Me.bugrep.Name = "bugrep"
+        Me.bugrep.Size = New System.Drawing.Size(127, 114)
+        Me.bugrep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.bugrep.TabIndex = 14
+        Me.bugrep.TabStop = False
+        '
+        'testcase
+        '
+        Me.testcase.Image = CType(resources.GetObject("testcase.Image"), System.Drawing.Image)
+        Me.testcase.Location = New System.Drawing.Point(505, 287)
+        Me.testcase.Name = "testcase"
+        Me.testcase.Size = New System.Drawing.Size(94, 84)
+        Me.testcase.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.testcase.TabIndex = 15
+        Me.testcase.TabStop = False
         '
         'Startup
         '
@@ -202,20 +216,21 @@ Partial Class Startup
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.BlanchedAlmond
         Me.ClientSize = New System.Drawing.Size(626, 492)
-        Me.Controls.Add(Me.PictureBox8)
-        Me.Controls.Add(Me.PictureBox7)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.testcase)
+        Me.Controls.Add(Me.bugrep)
+        Me.Controls.Add(Me.requirements)
+        Me.Controls.Add(Me.team)
+        Me.Controls.Add(Me.gantt)
         Me.Controls.Add(Me.PictureEsp)
         Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Incipio)
         Me.Controls.Add(Me.PictureRom)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureEng)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Start)
+        Me.Controls.Add(Me.Incepe)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximumSize = New System.Drawing.Size(644, 539)
         Me.MinimumSize = New System.Drawing.Size(644, 539)
@@ -229,26 +244,28 @@ Partial Class Startup
         CType(Me.PictureRom, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureEsp, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gantt, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.team, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.requirements, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.bugrep, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.testcase, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Incepe As Button
+    Friend WithEvents Start As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureEng As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureRom As PictureBox
-    Friend WithEvents Button4 As Button
+    Friend WithEvents Incipio As Button
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureEsp As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents gantt As PictureBox
+    Friend WithEvents team As PictureBox
+    Friend WithEvents requirements As PictureBox
+    Friend WithEvents bugrep As PictureBox
+    Friend WithEvents testcase As PictureBox
 End Class
